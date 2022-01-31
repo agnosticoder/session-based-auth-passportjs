@@ -1,0 +1,10 @@
+extends partials/layout.pug
+block content
+    h1 Hello World!
+    p welcome to #{name}
+    if !!user 
+        div= user.name
+        div= user.email
+    else 
+        div No user Found
+        a(href="/login") Login

@@ -1,0 +1,16 @@
+extends partials/layout.pug
+block content
+    if !!user 
+        div 
+            a(href='/home') Home 
+            form(action="/logout", method="post") 
+                button Logout
+    else 
+        div 
+            h1 Welcome! 
+            div 
+                a(href='/login') Login
+            div 
+                a(href='/register') Register
+            div 
+                a(href='/pug') pug

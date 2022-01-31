@@ -1,0 +1,11 @@
+extends partials/layout.pug
+block content
+    div 
+        h1 Home   
+        a(href='/')  Main
+        ul 
+            li= user.name
+            li= user.email
+        form(action="/logout", method="post") 
+            button Logout
+        a(href='/pug') pug
